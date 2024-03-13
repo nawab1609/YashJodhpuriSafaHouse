@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap");
+body {
+  height: auto;
+  width: 100%;
+  background-image: url(background.jpg);
+  background-size: cover;
+  font-family: "Source Code Pro", monospace;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.nav-bg {
+  background-color: rgb(245, 245, 245);
+}
+.space {
+  margin-top: 100px;
+}
+.box {
+  padding: 70px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.box1 {
+  background: url(safas.jpg) no-repeat;
+   background-size: cover; 
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+.card-container {
+  padding: 100px 0px;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+}
+
+.profile-card-6 {
+  max-width: 300px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.profile-card-6 img {
+  transition: all 0.15s linear;
+}
+
+.profile-card-6 .profile-name {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+  padding: 15px 20px;
+  background: linear-gradient(
+    140deg,
+    rgba(0, 0, 0, 0.4) 50%,
+    rgba(255, 255, 0, 0) 50%
+  );
+  transition: all 0.15s linear;
+}
+
+.profile-card-6 .profile-position {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.4);
+  left: 30px;
+  top: 100px;
+  transition: all 0.15s linear;
+}
+
+.profile-card-6 .profile-overview {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.4) 50%,
+    rgba(255, 255, 0, 0)
+  );
+  color: #fff;
+  padding: 50px 0px 20px 0px;
+  transition: all 0.15s linear;
+}
+
+.profile-card-6 .profile-overview h3 {
+  font-weight: bold;
+}
+
+.profile-card-6 .profile-overview p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.profile-card-6:hover img {
+  filter: brightness(80%);
+}
+
+.profile-card-6:hover .profile-name {
+  padding-left: 25px;
+  padding-top: 20px;
+}
+
+.profile-card-6:hover .profile-position {
+  left: 40px;
+}
+
+.profile-card-6:hover .profile-overview {
+  padding-bottom: 25px;
+}
